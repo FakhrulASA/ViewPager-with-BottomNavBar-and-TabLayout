@@ -1,6 +1,7 @@
 package com.example.nestedviewpager.tabui
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -35,6 +36,11 @@ class HomeFragment : Fragment() {
     @SuppressLint("ClickableViewAccessibility")
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
         vpadapter = TopViewPagerAdapter(requireActivity().supportFragmentManager, lifecycle)
@@ -42,6 +48,18 @@ class HomeFragment : Fragment() {
         binding.aoSignDotIndicator.setViewPager2(binding.viewPager2)
 
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+    }
+
+    override fun onPause() {
+        super.onPause()
     }
 
 }

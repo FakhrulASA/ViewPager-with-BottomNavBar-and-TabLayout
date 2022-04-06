@@ -20,7 +20,6 @@ class TopViewPagerAdapter(
         list.add(FragmentOne())
         list.add(FragmentTwo())
         list.add(FragmentThree())
-
     }
 
     val getFragmentList: MutableList<Fragment>

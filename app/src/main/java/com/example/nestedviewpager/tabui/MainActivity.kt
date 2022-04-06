@@ -19,8 +19,33 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         vpadapter = ViewPagerAdapter(this.supportFragmentManager, lifecycle)
         binding.viewPager.adapter = vpadapter
-        binding.tabLayout.setupWithViewPager2(binding.viewPager)
-        binding.viewPager.isUserInputEnabled=false
+//        binding.tabLayout.setupWithViewPager2(binding.viewPager)
+        binding.viewPager.isUserInputEnabled = true
+
+        binding.bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.page_1 -> {
+                    binding.viewPager.currentItem = 0
+                    return@setOnItemSelectedListener true
+                }
+                R.id.page_2 -> {
+                    binding.viewPager.currentItem = 1
+                    return@setOnItemSelectedListener true
+                }
+                R.id.page_3 -> {
+                    binding.viewPager.currentItem = 2
+                    return@setOnItemSelectedListener true
+                }
+                R.id.page_4 -> {
+                    binding.viewPager.currentItem = 3
+                    return@setOnItemSelectedListener true
+                }
+                else -> {
+                    return@setOnItemSelectedListener false
+                }
+            }
+        }
+
     }
 
     private fun TabLayout.setupWithViewPager2(viewPager: ViewPager2) {
