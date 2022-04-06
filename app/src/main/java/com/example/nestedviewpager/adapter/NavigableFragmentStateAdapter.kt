@@ -1,4 +1,4 @@
-package com.example.nestedviewpager
+package com.example.nestedviewpager.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

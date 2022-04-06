@@ -1,8 +1,12 @@
-package com.example.nestedviewpager
+package com.example.nestedviewpager.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
+import com.example.nestedviewpager.tabui.AppointmentsFragment
+import com.example.nestedviewpager.tabui.DocumentsFragment
+import com.example.nestedviewpager.tabui.HomeFragment
+import com.example.nestedviewpager.tabui.JobsFragment
 
 
 class ViewPagerAdapter(

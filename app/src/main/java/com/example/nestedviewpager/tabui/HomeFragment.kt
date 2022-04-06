@@ -1,16 +1,14 @@
-package com.example.nestedviewpager
+package com.example.nestedviewpager.tabui
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.MotionEvent
 import android.view.View
-import android.view.View.OnTouchListener
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.nestedviewpager.databinding.HomeFragmentBinding
-import com.example.nestedviewpager.topsliderfragment.TopViewPagerAdapter
+import com.example.nestedviewpager.adapter.TopViewPagerAdapter
 
 
 class HomeFragment : Fragment() {

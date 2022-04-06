@@ -1,8 +1,10 @@
-package com.example.nestedviewpager
+package com.example.nestedviewpager.tabui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
+import com.example.nestedviewpager.R
+import com.example.nestedviewpager.adapter.ViewPagerAdapter
 import com.example.nestedviewpager.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator

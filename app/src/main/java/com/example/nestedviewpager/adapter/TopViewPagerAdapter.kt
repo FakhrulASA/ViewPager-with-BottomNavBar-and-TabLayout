@@ -1,9 +1,11 @@
-package com.example.nestedviewpager.topsliderfragment
+package com.example.nestedviewpager.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
-import com.example.nestedviewpager.NavigableFragmentStateAdapter
+import com.example.nestedviewpager.topsliderfragment.FragmentOne
+import com.example.nestedviewpager.topsliderfragment.FragmentThree
+import com.example.nestedviewpager.topsliderfragment.FragmentTwo
 
 
 class TopViewPagerAdapter(
