@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.17916666666666667" />
+        <entry key="app/src/main/res/drawable/bottom_nav_indicator.xml" value="0.1505" />
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.175" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14" />
         <entry key="app/src/main/res/layout/appointments_fragment.xml" value="0.1890625" />
