@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         vpadapter = ViewPagerAdapter(this.supportFragmentManager, lifecycle)
         binding.viewPager.adapter = vpadapter
 //        binding.tabLayout.setupWithViewPager2(binding.viewPager)
-        binding.viewPager.isUserInputEnabled = true
+        binding.viewPager.isUserInputEnabled = false
 
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
